@@ -1,0 +1,14 @@
+streamlit
+pandas
+langchain
+langchain-google-genai
+langchain-experimental
+plotly
+seaborn
+matplotlib
+python-docx
+numpy
+tabulate
+kaleido
+python-docx
+
