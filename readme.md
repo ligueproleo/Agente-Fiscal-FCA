@@ -54,3 +54,24 @@ Um painel dedicado à auditoria fiscal, que executa análises cruciais baseadas 
 ---
 
 ## 📂 Estrutura do Projeto
+```bash
+/
+├── .streamlit/
+│   └── secrets.toml        # Armazena as chaves de API
+│
+├── tabs/
+│   ├── __init__.py
+│   ├── agent_tab.py        # Aba de Q&A manual
+│   ├── insights_tab.py     # Aba de Insights Automáticos da IA
+│   ├── dashboard_tab.py    # Aba do painel de controle visual
+│   ├── fiscal_tab.py       # Aba de Análise Fiscal
+│   └── report_tab.py       # Aba do montador de relatório
+│
+├── utils/
+│   ├── __init__.py
+│   ├── callbacks.py        # Logger customizado para o terminal
+│   └── processing.py       # Funções de processamento e geração do .docx
+│
+├── app.py                  # Ponto de entrada da aplicação
+├── requirements.txt        # Lista de dependências
+└── README.md               # Esta documentação
