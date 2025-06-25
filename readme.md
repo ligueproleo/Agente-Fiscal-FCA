@@ -1,9 +1,12 @@
+# 🧠 Equipe First Class Agents  
+Transformamos desafios da sua empresa em soluções inteligentes com o uso de agentes autônomos e análise de dados, facilitando sua tomada de decisão no que realmente importa para o seu negócio.
+
 
 # 🚀 Plataforma de Análise de Notas Fiscais com Agentes de IA
 
 Esta é uma plataforma de Business Intelligence (BI) e Análise de Dados inovadora, que emprega o poder de agentes de Inteligência Artificial para transformar dados brutos de Notas Fiscais (em formato CSV) em dashboards interativos, análises fiscais automáticas e relatórios profissionais em formato `.docx`.
 
----
+----
 
 ## ✨ Funcionalidades Principais
 
