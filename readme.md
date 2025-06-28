@@ -1,12 +1,86 @@
-# 🧠 Equipe First Class Agents  
-Transformamos desafios da sua empresa em soluções inteligentes com o uso de agentes autônomos e análise de dados, facilitando sua tomada de decisão no que realmente importa para o seu negócio.
-
+-----
 
 # 🚀 Plataforma de Análise de Notas Fiscais com Agentes de IA
 
-Esta é uma plataforma de Business Intelligence (BI) e Análise de Dados inovadora, que emprega o poder de agentes de Inteligência Artificial para transformar dados brutos de Notas Fiscais (em formato CSV) em dashboards interativos, análises fiscais automáticas e relatórios profissionais em formato `.docx`.
+Esta é um agente especializado em Business Intelligence (BI) e Análise de Dados inovadora, que emprega o poder de agentes de Inteligência Artificial para transformar dados brutos de Notas Fiscais (em formato CSV) em dashboards interativos, análises fiscais automáticas e relatórios profissionais em formato `.docx`.
 
-----
+-----
+
+## 🧠 Equipe First Class Agents
+
+Transformamos desafios da sua empresa em soluções inteligentes com o uso de agentes autônomos e análise de dados, facilitando sua tomada de decisão no que realmente importa para o seu negócio.
+
+-----
+
+## Como Executar o Projeto
+
+Siga os passos abaixo para configurar e executar a aplicação:
+
+### 1\. Clonar ou Baixar o Projeto
+
+Primeiro, clone ou baixe os arquivos do projeto para uma pasta no seu computador. Você pode fazer isso de duas maneiras:
+
+  * **Baixar como ZIP:** Vá no botão verde "Code" no GitHub e selecione "Download ZIP".
+  * **Via Terminal:** Use o comando `git clone` no seu terminal:
+    ```bash
+    git clone https://github.com/asegnini/I2A2.git
+    ```
+
+### 2\. Criar um Ambiente Virtual
+
+Abra um terminal na pasta do projeto e execute o seguinte comando:
+
+```bash
+python -m venv .venv
+```
+
+### 3\. Ativar o Ambiente Virtual
+
+#### No Windows
+
+```bash
+.\.venv\Scripts\activate
+```
+
+#### No macOS/Linux
+
+```bash
+source .venv/bin/activate
+```
+
+### 4\. Instalar as Dependências
+
+Com o ambiente virtual ativado, execute o comando abaixo para instalar todas as bibliotecas listadas no `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5\. Configurar a Chave de API
+
+Para que a aplicação funcione corretamente, você precisa configurar sua chave de API do Google Gemini:
+
+1.  Crie uma pasta chamada **`.streamlit`** na raiz do seu projeto.
+
+2.  Dentro dela, crie um arquivo chamado **`secrets.toml`**.
+
+3.  Adicione sua chave de API do Google Gemini ao arquivo da seguinte forma, substituindo `"SUA_CHAVE_DE_API_VAI_AQUI"` pela sua chave real:
+
+    ```toml
+    GOOGLE_API_KEY = "SUA_CHAVE_DE_API_VAI_AQUI"
+    ```
+
+### 6\. Executar a Aplicação
+
+Com todas as configurações feitas e o ambiente virtual ativado, execute a aplicação Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+Isso abrirá a aplicação no seu navegador padrão.
+
+-----
 
 ## ✨ Funcionalidades Principais
 
