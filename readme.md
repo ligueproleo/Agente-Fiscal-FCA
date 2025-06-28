@@ -86,7 +86,7 @@ Isso abrirá a aplicação no seu navegador padrão.
 
 A aplicação é organizada em cinco abas principais, cada uma projetada com um propósito claro para otimizar sua análise fiscal:
 
-### 💬 Agente Q&A
+### 💬 Agente Q\&A
 
 Uma interface de chat intuitiva que permite fazer perguntas específicas em linguagem natural diretamente ao conjunto de dados. Ideal para investigações pontuais e obtenção rápida de informações.
 
@@ -98,9 +98,9 @@ Ferramenta de "um clique" que instrui o agente a responder a 10 perguntas de neg
 
 Um painel de controle visual e interativo que oferece uma visão abrangente dos seus dados:
 
-- **Mapeamento de Colunas:** Permite ao usuário mapear as colunas do seu arquivo para conceitos de negócio essenciais (Cliente, Produto, Quantidade), garantindo a adaptabilidade da ferramenta a diversas fontes de dados.
-- **KPIs Dinâmicos:** Exibe os principais indicadores de performance (Faturamento Total, Itens Vendidos, etc.).
-- **Gráficos Curados:** Apresenta análises visuais automáticas dos Top 10 Clientes, Top 10 Produtos e Vendas ao Longo do Tempo.
+  * **Mapeamento de Colunas:** Permite ao usuário mapear as colunas do seu arquivo para conceitos de negócio essenciais (Cliente, Produto, Quantidade), garantindo a adaptabilidade da ferramenta a diversas fontes de dados.
+  * **KPIs Dinâmicos:** Exibe os principais indicadores de performance (Faturamento Total, Itens Vendidos, etc.).
+  * **Gráficos Curados:** Apresenta análises visuais automáticas dos Top 10 Clientes, Top 10 Produtos e Vendas ao Longo do Tempo.
 
 ### ✅ Análise Fiscal
 
@@ -110,45 +110,47 @@ Um painel dedicado à auditoria fiscal, que executa análises cruciais baseadas 
 
 Área de preparação para o relatório final:
 
-- **Preview Interativo:** Exibe todos os itens "pinados" (gráficos, tabelas, insights) para revisão.
-- **Gerenciamento:** Permite remover itens individualmente antes da exportação.
-- **Exportação Profissional:** Gera um documento `.docx` de alta qualidade, com capa, títulos e gráficos renderizados como imagens nítidas.
+  * **Preview Interativo:** Exibe todos os itens "pinados" (gráficos, tabelas, insights) para revisão.
+  * **Gerenciamento:** Permite remover itens individualmente antes da exportação.
+  * **Exportação Profissional:** Gera um documento `.docx` de alta qualidade, com capa, títulos e gráficos renderizados como imagens nítidas.
 
----
+-----
 
 ## 🛠️ Stack de Tecnologias
 
-- **Linguagem:** Python 3.11+
-- **Framework Web/UI:** Streamlit
-- **Análise de Dados:** Pandas
-- **Inteligência Artificial (LLM):** Google Gemini Pro / Flash
-- **Orquestração de Agentes:** LangChain, LangChain Experimental
-- **Visualização de Dados:** Plotly Express
-- **Geração de Documentos:** `python-docx`
-- **Exportação de Gráficos:** `Kaleido`
-- **Mecanismo de Retry:** `Tenacity`
+  * **Linguagem:** Python 3.11+
+  * **Framework Web/UI:** Streamlit
+  * **Análise de Dados:** Pandas
+  * **Inteligência Artificial (LLM):** Google Gemini Pro / Flash
+  * **Orquestração de Agentes:** LangChain, LangChain Experimental
+  * **Visualização de Dados:** Plotly Express
+  * **Geração de Documentos:** `python-docx`
+  * **Exportação de Gráficos:** `Kaleido`
+  * **Mecanismo de Retry:** `Tenacity`
 
----
+-----
 
 ## 📂 Estrutura do Projeto
+
 ```bash
 /
 ├── .streamlit/
-│   └── secrets.toml        # Armazena as chaves de API
+│   └── secrets.toml        # Armazena as chaves de API
 │
 ├── tabs/
-│   ├── __init__.py
-│   ├── agent_tab.py        # Aba de Q&A manual
-│   ├── insights_tab.py     # Aba de Insights Automáticos da IA
-│   ├── dashboard_tab.py    # Aba do painel de controle visual
-│   ├── fiscal_tab.py       # Aba de Análise Fiscal
-│   └── report_tab.py       # Aba do montador de relatório
+│   ├── __init__.py
+│   ├── agent_tab.py        # Aba de Q&A manual
+│   ├── insights_tab.py     # Aba de Insights Automáticos da IA
+│   ├── dashboard_tab.py    # Aba do painel de controle visual
+│   ├── fiscal_tab.py       # Aba de Análise Fiscal
+│   └── report_tab.py       # Aba do montador de relatório
 │
 ├── utils/
-│   ├── __init__.py
-│   ├── callbacks.py        # Logger customizado para o terminal
-│   └── processing.py       # Funções de processamento e geração do .docx
+│   ├── __init__.py
+│   ├── callbacks.py        # Logger customizado para o terminal
+│   └── processing.py       # Funções de processamento e geração do .docx
 │
 ├── app.py                  # Ponto de entrada da aplicação
 ├── requirements.txt        # Lista de dependências
 └── README.md               # Esta documentação
+```
